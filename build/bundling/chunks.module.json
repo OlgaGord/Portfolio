@@ -1,0 +1,102 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.39.2",
+  "hash": "3adc2d36431be43d884d",
+  "publicPath": "/static/",
+  "outputPath": "D:\\projects\\project1\\portfolio\\build\\static",
+  "assetsByChunkName": {
+    "list": "list.module.js",
+    "portfolio": [
+      "portfolio.module.js",
+      "portfolio.2f956664bc15ddec53a1.hot-update.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "2f956664bc15ddec53a1.hot-update.json",
+      "size": 51,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 17979,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "portfolio.2f956664bc15ddec53a1.hot-update.js",
+      "size": 5394,
+      "chunks": [
+        "portfolio"
+      ],
+      "chunkNames": [
+        "portfolio"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "portfolio.module.js",
+      "size": 3522144,
+      "chunks": [
+        "portfolio"
+      ],
+      "chunkNames": [
+        "portfolio"
+      ],
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "portfolio": {
+      "chunks": [
+        "portfolio"
+      ],
+      "assets": [
+        "portfolio.module.js",
+        "portfolio.2f956664bc15ddec53a1.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "portfolio": {
+      "chunks": [
+        "portfolio"
+      ],
+      "assets": [
+        "portfolio.module.js",
+        "portfolio.2f956664bc15ddec53a1.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
