@@ -35,15 +35,13 @@ const Item = styled.div`
   box-sizing: border-box;
   flex-shrink: 0;
     
-  :hover {
-    color: ${hoverColor} ;
-  }
 
   & > a {
     display: inline-block;
     line-height: 2em;
+    color: ${({ isSelected }) => (isSelected ? `${hoverColor}` : "#fff")};
     border-bottom: 2px solid
-      ${({ isSelected }) => (isSelected ? "#fff" : "transparent")};
+      ${({ isSelected }) => (isSelected ? `${hoverColor}` : "transparent")};
   }
 
   &:first-of-type {

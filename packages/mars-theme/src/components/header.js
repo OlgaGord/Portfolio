@@ -17,6 +17,8 @@ const Header = ({ state }) => (
 
 export default connect(Header);
 
+const hoverColor = "lightgrey";
+
 const Container = styled.div`
   width: 848px;
   max-width: 100%;
@@ -26,6 +28,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
 `;
 
 const Title = styled.h2`

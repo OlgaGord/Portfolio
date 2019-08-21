@@ -31,7 +31,7 @@ const settings = {
             ],
             [
               "Travel",
-              "/tag/travel/"
+              "/front-page/"
             ],
             [
               "About Us",
