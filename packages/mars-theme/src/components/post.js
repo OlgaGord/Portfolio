@@ -14,19 +14,22 @@ const Post = ({ state, actions, libraries }) => {
   // Get a date for humans.
   const date = new Date(post.date);
 
+
   // Prefetch home posts and the list component.
   useEffect(() => {
     actions.source.fetch("/");
     List.preload();
   }, []);
-
+  
   return data.isReady ? (
     <Container>
       <div>
         <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
         {data.isPost && (
           <div>
+            
             <StyledLink link={author.link}>
+              
               <Author>
                 By <b>{author.name}</b>
               </Author>
@@ -42,6 +45,9 @@ const Post = ({ state, actions, libraries }) => {
         <FeaturedMedia id={post.featured_media} />
       )}
       <Body>
+      <img src={post.acf.img1.url}></img>
+      <img src={post.acf.img2.url}></img>
+      <img src={post.acf.img3.url}></img>
         <libraries.html2react.Component html={post.content.rendered} />
       </Body>
     </Container>

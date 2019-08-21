@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import Nav from "./nav";
 
+
 const Header = ({ state }) => (
   <>
     <Container>

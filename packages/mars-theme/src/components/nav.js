@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import { css, jsx } from '@emotion/core';
 
+
 const Nav = ({ state }) => (
   <Container>
     {state.theme.menu.map(([name, link]) => (

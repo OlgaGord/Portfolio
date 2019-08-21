@@ -5,6 +5,8 @@ import List from "./list";
 import Post from "./post";
 import Page404 from "./page404.js";
 import Loading from "./loading";
+import FrontImage from "./frontImage";
+
 
 const globalStyles = css`
   body {
@@ -32,8 +34,10 @@ const Theme = ({ state }) => {
       <Global styles={globalStyles} />
       <HeadContainer>
         <Header />
+        <FrontImage />
       </HeadContainer>
       <Body>
+             
         {data.isFetching && <Loading />}
         {data.isArchive && <List />}
         {data.isPostType && <Post />}
@@ -60,4 +64,6 @@ const Body = styled.div`
     rgba(66, 174, 228, 0.1),
     rgba(66, 174, 228, 0)
   );
+
 `;
+
