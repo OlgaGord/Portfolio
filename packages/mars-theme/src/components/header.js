@@ -18,7 +18,7 @@ const Header = ({ state }) => (
 
 export default connect(Header);
 
-const hoverColor = "lightgrey";
+const hoverColor = "orange";
 
 const Container = styled.div`
   width: 848px;
@@ -35,6 +35,7 @@ const Container = styled.div`
 const Title = styled.h2`
   margin: 0;
   margin-bottom: 16px;
+  color:black
 `;
 
 const Description = styled.h4`

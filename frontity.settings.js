@@ -53,6 +53,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
+          "homepage" : "front-page",
           "api": "http://olga.eproofs.ca/wp-json"
         }
       }

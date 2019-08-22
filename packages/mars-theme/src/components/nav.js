@@ -14,7 +14,7 @@ const Nav = ({ state }) => (
   </Container>
 );
 
-const hoverColor = "lightgrey";
+const hoverColor = "grey";
 export default connect(Nav);
 
 const Container = styled.nav`
@@ -31,7 +31,7 @@ const Container = styled.nav`
 const Item = styled.div`
   padding: 0;
   margin: 0 16px;
-  color: #fff;
+  color: black;
   font-size: 0.9em;
   box-sizing: border-box;
   flex-shrink: 0;

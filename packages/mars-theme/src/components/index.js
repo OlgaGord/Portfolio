@@ -8,6 +8,7 @@ import Loading from "./loading";
 import FrontImage from "./frontImage";
 
 
+
 const globalStyles = css`
   body {
     margin: 0;
@@ -34,10 +35,13 @@ const Theme = ({ state }) => {
       <Global styles={globalStyles} />
       <HeadContainer>
         <Header />
-        {/* <FrontImage /> */}
+         {data.isHome && (
+          <FrontImage /> 
+       )}  
+        
       </HeadContainer>
       <Body>
-             
+          
         {data.isFetching && <Loading />}
         {data.isArchive && <List />}
         {data.isPostType && <Post />}
@@ -53,7 +57,7 @@ const HeadContainer = styled.div`
   display: flex;
   align-items: left;
   flex-direction: column;
-  background-color: black;
+  
 `;
 
 const Body = styled.div`
