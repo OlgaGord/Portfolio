@@ -48,6 +48,7 @@ const Post = ({ state, actions, libraries }) => {
       <img src={post.acf.img1.url}></img>
       <img src={post.acf.img2.url}></img>
       <img src={post.acf.img3.url}></img>
+ 
         <libraries.html2react.Component html={post.content.rendered} />
       </Body>
     </Container>

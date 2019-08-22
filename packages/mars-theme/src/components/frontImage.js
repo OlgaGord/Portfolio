@@ -1,12 +1,28 @@
+// import React, { useEffect } from "react";
 import React from "react";
 import { connect, styled } from "frontity";
-import { getRegisteredStyles } from "@emotion/utils";
+import Loading from './loading';
 
-const frontImage = () => 
+const frontImage = ({state}) => {
+
+const data = state.source.get(state.router.link);
+  // Get the the post.
+  const post = state.source[data.type][data.id];
+  {console.log(post.acf)}
+//   useEffect(() => {
+//     actions.source.fetch("/");
+//     List.preload();
+//   }, []);
+  
+  return  (
     <Container> 
         <Container1>
             <Frame1>
                 <Door1>
+                    
+                <img src={post.acf.img1.url}></img>
+      
+      
 
                 </Door1>
                 
@@ -16,7 +32,7 @@ const frontImage = () =>
         <Container2>
             <Frame2>
                 <Door2>
-
+<img src={post.acf.img2.url}></img>
                 </Door2>
             </Frame2>
             
@@ -24,14 +40,15 @@ const frontImage = () =>
         <Container3>
             <Frame3>
                 <Door3>
-
+<img src={post.acf.img3.url}></img> 
                 </Door3>
             </Frame3>
         </Container3>
 
 
     </Container>
-
+ ) 
+};
 export default connect (frontImage);
 
 const Container = styled.div`
@@ -47,16 +64,14 @@ const Container = styled.div`
 const Container1 = styled.div`
     display:flex;
     flex-direction:row;
-    background:red;
     width:33.33333%;
-    color: white;
+    color: black;
     height:400px;
 
 `;
 const Container2 = styled.div`
     display:flex;
     flex-direction:row;
-    background:black;
     width:33.33333%;
     color: white;
     height:400px;
@@ -66,7 +81,6 @@ const Container2 = styled.div`
 const Container3 = styled.div`
     display:flex;
     flex-direction:row;
-    background:grey;
     color: white;
     height:400px;
     width:33.33333%;
@@ -134,5 +148,6 @@ const Door3 = styled.div`
           transform:rotateY(-90deg);
       }
 `;
+    
 
 

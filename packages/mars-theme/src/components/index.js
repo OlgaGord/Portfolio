@@ -34,7 +34,7 @@ const Theme = ({ state }) => {
       <Global styles={globalStyles} />
       <HeadContainer>
         <Header />
-        <FrontImage />
+        {/* <FrontImage /> */}
       </HeadContainer>
       <Body>
              
