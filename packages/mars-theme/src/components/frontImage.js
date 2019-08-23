@@ -38,11 +38,9 @@ const Container = styled.div`
     display:flex;
     flex-direction:row;
     justify-content:center;
-    background:white;
-    color: black;
     height:auto;
     width:100%;
-    
+
 `;
 
 const Container1 = styled.div`
@@ -55,6 +53,9 @@ const Container2 = styled.div`
     display:flex;
     flex-direction:row;
 
+    :hover {
+        background-color:lightgrey;
+    }
 `;
 
 const Container3 = styled.div`
@@ -64,38 +65,32 @@ const Container3 = styled.div`
 `;
 
 const Door1 = styled.div`
-      transition: transform 1.5s;
-      transform-style: preserve-3d;
-      transform-origin: left center;
       max-width: 100%;
       height: auto;
       
-      :hover {
-          transform:rotateY(-90deg);
-      }
 `;
 const Door2 = styled.div`
-      transition: transform 1.5s;
-      transform-style: preserve-3d;
-      
-      max-width: 100%;
-      height: auto;
-      
-      :hover {
-          transform:rotateY(-90deg);
-      }
-`;
-
-const Door3 = styled.div`
-      transition: transform 1.5s;
+      transition: transform 1s;
       transform-style: preserve-3d;
       transform-origin: right center;
       max-width: 100%;
       height: auto;
-      opacity:0.9;
+            
       :hover {
           transform:rotateY(-90deg);
+          
       }
+
+      .centerImage {
+          
+      }
+`;
+
+const Door3 = styled.div`
+      max-width: 100%;
+      height: auto;
+      opacity:0.9;
+
 `;
     
 

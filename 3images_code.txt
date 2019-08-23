@@ -149,3 +149,10 @@ const Door3 = styled.div`
 `;
 
 
+background: linear-gradient(
+    180deg,
+    rgba(232, 112, 37, 0.1),
+    rgba(232, 112, 37, 0)
+  );
+
+${({ isSelected }) => (isSelected ? `${hoverColor}` : "transparent")};

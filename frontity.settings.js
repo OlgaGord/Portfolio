@@ -54,7 +54,7 @@ const settings = {
       "state": {
         "source": {
           "homepage" : "front-page",
-          "api": "http://olga.eproofs.ca/wp-json"
+          "api": "https://olga.eproofs.ca/wp-json"
         }
       }
     },

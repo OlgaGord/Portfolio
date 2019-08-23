@@ -14,7 +14,7 @@ const Nav = ({ state }) => (
   </Container>
 );
 
-const hoverColor = "grey";
+const underColor = "#fff";
 export default connect(Nav);
 
 const Container = styled.nav`
@@ -26,12 +26,13 @@ const Container = styled.nav`
   padding: 0 24px;
   margin: 0;
   overflow-x: auto;
+  margin-bottom:2.5rem;
 `;
 
 const Item = styled.div`
   padding: 0;
   margin: 0 16px;
-  color: black;
+  color: #fff;
   font-size: 0.9em;
   box-sizing: border-box;
   flex-shrink: 0;
@@ -39,10 +40,11 @@ const Item = styled.div`
 
   & > a {
     display: inline-block;
+    text-decoration:none;
     line-height: 2em;
-    color: ${({ isSelected }) => (isSelected ? `${hoverColor}` : "#fff")};
+    color: #fff;
     border-bottom: 2px solid
-      ${({ isSelected }) => (isSelected ? `${hoverColor}` : "transparent")};
+    ${({ isSelected }) => (isSelected ? `${underColor}` : "transparent")};
   }
 
   &:first-of-type {

@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
+import { Button } from 'reactstrap';
 
 const Post = ({ state, actions, libraries }) => {
   // Get info of current post.
@@ -22,8 +23,9 @@ const Post = ({ state, actions, libraries }) => {
   }, []);
   
   return data.isReady ? (
+    <>
     <Container>
-      <div>
+      <div><Button color="danger">Danger!</Button>
         <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
         {data.isPost && (
           <div>
@@ -54,15 +56,15 @@ const Post = ({ state, actions, libraries }) => {
         <libraries.html2react.Component html={post.content.rendered} />
       </Body>
     </Container>
+    </>
   ) : null;
 };
 
 export default connect(Post);
 
 const Container = styled.div`
-  width: 800px;
-  margin: 0;
-  padding: 24px;
+  width: 80%;
+  margin: 0 auto;
 `;
 
 const Title = styled.h1`
@@ -101,9 +103,7 @@ const Body = styled.div`
   }
 
   img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+   
   }
 
   figure {
