@@ -22,7 +22,7 @@ class TestButton extends React.Component {
       //alert("Great Write!");
       
         var i=this.state['i'];
-          var txt = ' Search the photos of you favorite food';
+          var txt = ' Search the photos of you favorite things';
           var speed = 50;
                function write(){
                 if (i < txt.length) {
@@ -49,8 +49,9 @@ class TestButton extends React.Component {
     } 
 
     testClear(){
+        clearInterval(this.state['intervalId']);
         this.myRef.current.value = "";
-        const isClicked = this.state.isClicked;
+        // const isClicked = this.state.isClicked;
     } 
 
     
