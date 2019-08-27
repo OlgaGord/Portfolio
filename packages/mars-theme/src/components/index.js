@@ -7,6 +7,8 @@ import Page404 from "./page404.js";
 import Loading from "./loading";
 import FrontImage from "./frontImage";
 import customStyles from '../../css/style.css';
+import TestButton from './testButton';
+
 //import bootstrapStyles from 'bootstrap/dist/css/bootstrap.min.css';
 
 const backColor = "#3a151c";
@@ -40,6 +42,7 @@ const Theme = ({ state }) => {
         <meta name="description" content={state.frontity.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        {/* <script src="static/letterAnimation.js"></script>  */}
         <html lang="en" />
 
       </Head>
@@ -50,17 +53,16 @@ const Theme = ({ state }) => {
          {data.isHome && (
           <FrontImage /> 
        )}  
-        
+      <TestButton/>
       </HeadContainer>
       <Body>
-          
+
         {data.isFetching && <Loading />}
         {data.isArchive && <List />}
         {data.isPostType && <Post />}
         {data.is404 && <Page404 />}
       </Body>
-    
-      
+
     </>
   );
 };

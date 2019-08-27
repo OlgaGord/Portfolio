@@ -4,6 +4,7 @@ import Link from "./link";
 import Nav from "./nav";
 
 
+
 const Header = ({ state }) => (
   <>
     <Container>
@@ -11,6 +12,7 @@ const Header = ({ state }) => (
         <Title>{state.frontity.title}</Title>
       </StyledLink>
       <Description>{state.frontity.description}</Description>
+
     </Container>
     <Nav />
   </>
