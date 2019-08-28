@@ -2,7 +2,7 @@ const settings = {
   "name": "portfolio",
   "state": {
     "frontity": {
-      "url": "olga.eproofs.ca",
+      "url": "webuty.ca",
       "title": "Olga Gordeyeva's Portfolio",
       "description": ""
     }
@@ -54,7 +54,7 @@ const settings = {
       "state": {
         "source": {
           "homepage" : "front-page",
-          "api": "https://olga.eproofs.ca/wp-json"
+          "api": "https://webuty.ca/wp-json"
         }
       }
     },
