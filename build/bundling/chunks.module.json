@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.2",
-  "hash": "2a467656a48517040eff",
+  "hash": "0efb93c3da3180599b36",
   "publicPath": "/static/",
   "outputPath": "D:\\projects\\project1\\portfolio\\build\\static",
   "assetsByChunkName": {
@@ -23,14 +23,14 @@
     },
     {
       "name": "portfolio.module.js",
-      "size": 4742096,
+      "size": 4742749,
       "chunks": [
         "portfolio"
       ],
       "chunkNames": [
         "portfolio"
       ],
-      "emitted": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,

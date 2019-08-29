@@ -42,6 +42,8 @@ const Theme = ({ state }) => {
         <meta name="description" content={state.frontity.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://webuty.ca/wp-includes/css/dist/block-library/style.min.css?ver=5.2.2" />
+        
         {/* <script src="static/letterAnimation.js"></script>  */}
         <html lang="en" />
 
@@ -56,11 +58,13 @@ const Theme = ({ state }) => {
       <TestButton/>
       </HeadContainer>
       <Body>
-
-        {data.isFetching && <Loading />}
-        {data.isArchive && <List />}
-        {data.isPostType && <Post />}
-        {data.is404 && <Page404 />}
+        <div class="col-sm-4">
+          {data.isFetching && <Loading />}
+          {data.isArchive && <List />}
+          {data.isPostType && <Post />}
+          {data.is404 && <Page404 />}
+        </div>
+          
       </Body>
 
     </>
@@ -84,4 +88,5 @@ const Body = styled.div`
   justify-content: center;
    
 `;
+
 
