@@ -18,12 +18,8 @@ const settings = {
               "/"
             ],
             [
-              "Web design",
-              "/category/web_design/"
-            ],
-            [
-              "Programming",
-              "/category/programming/"
+              "Projects",
+              "/projects/"
             ],
             [
               "First Projects",
