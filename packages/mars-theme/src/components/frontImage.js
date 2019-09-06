@@ -52,15 +52,21 @@ const Container1 = styled.div`
 const Container2 = styled.div`
     display:flex;
     flex-direction:row;
+    position: relative;
+    transition: all 600ms ease;
+    transform: perspective(900) rotateY(0deg);
+    transform-origin: 0% 0%;
 
     :hover {
         background-color:lightgrey;
+        transform: perspective(900) rotateY(60deg);
     }
 `;
 
 const Container3 = styled.div`
     display:flex;
     flex-direction:row;
+    
 
 `;
 
@@ -70,16 +76,9 @@ const Door1 = styled.div`
       
 `;
 const Door2 = styled.div`
-      transition: transform 1s;
-      transform-style: preserve-3d;
-      transform-origin: right center;
       max-width: 100%;
       height: auto;
-            
-      :hover {
-          transform:rotateY(-90deg);
-          
-      }
+     
 
       .centerImage {
           
