@@ -53,13 +53,13 @@ const Container2 = styled.div`
     display:flex;
     flex-direction:row;
     position: relative;
-    transition: all 600ms ease;
-    transform: perspective(900) rotateY(0deg);
+    transition: all 2500ms ease;
+    transform: perspective(400) rotateY(0deg);
     transform-origin: 0% 0%;
-
+    
     :hover {
-        background-color:lightgrey;
-        transform: perspective(900) rotateY(60deg);
+        background-color:black;
+        transform: perspective(400) rotateY(75deg);
     }
 `;
 
