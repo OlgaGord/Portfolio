@@ -49,7 +49,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "homepage" : "front-page",
+          "homepage" : "portfolio",
           "api": "https://webuty.ca/wp-json"
         }
       }

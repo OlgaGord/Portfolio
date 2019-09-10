@@ -37,7 +37,7 @@ export default connect (frontImage);
 const Container = styled.div`
     display:flex;
     flex-direction:row;
-    justify-content:center;
+    justify-content:space-around;
     height:auto;
     width:100%;
 
@@ -54,12 +54,12 @@ const Container2 = styled.div`
     flex-direction:row;
     position: relative;
     transition: all 2500ms ease;
-    transform: perspective(400) rotateY(0deg);
+    transform: perspective(900) rotateY(0deg);
     transform-origin: 0% 0%;
     
     :hover {
         background-color:black;
-        transform: perspective(400) rotateY(75deg);
+        transform: perspective(900) rotateY(75deg);
     }
 `;
 
@@ -78,9 +78,7 @@ const Door1 = styled.div`
 const Door2 = styled.div`
       max-width: 100%;
       height: auto;
-     
-
-      .centerImage {
+       .centerImage {
           
       }
 `;

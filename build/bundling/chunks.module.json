@@ -2,24 +2,14 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.2",
-  "hash": "8b864a0bc8843ad8474f",
+  "hash": "f3c3a483c4a161fb0aaa",
   "publicPath": "/static/",
   "outputPath": "D:\\projects\\project1\\portfolio\\build\\static",
   "assetsByChunkName": {
     "list": "list.module.js",
-    "portfolio": [
-      "portfolio.module.js",
-      "portfolio.d6b1c1f5951f4e90e5d1.hot-update.js"
-    ]
+    "portfolio": "portfolio.module.js"
   },
   "assets": [
-    {
-      "name": "d6b1c1f5951f4e90e5d1.hot-update.json",
-      "size": 51,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": false
-    },
     {
       "name": "list.module.js",
       "size": 17979,
@@ -32,19 +22,8 @@
       "emitted": false
     },
     {
-      "name": "portfolio.d6b1c1f5951f4e90e5d1.hot-update.js",
-      "size": 8225,
-      "chunks": [
-        "portfolio"
-      ],
-      "chunkNames": [
-        "portfolio"
-      ],
-      "emitted": false
-    },
-    {
       "name": "portfolio.module.js",
-      "size": 4743366,
+      "size": 4743354,
       "chunks": [
         "portfolio"
       ],
@@ -61,8 +40,7 @@
         "portfolio"
       ],
       "assets": [
-        "portfolio.module.js",
-        "portfolio.d6b1c1f5951f4e90e5d1.hot-update.js"
+        "portfolio.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -74,8 +52,7 @@
         "portfolio"
       ],
       "assets": [
-        "portfolio.module.js",
-        "portfolio.d6b1c1f5951f4e90e5d1.hot-update.js"
+        "portfolio.module.js"
       ],
       "children": {},
       "childAssets": {}
