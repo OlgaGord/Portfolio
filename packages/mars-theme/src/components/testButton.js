@@ -22,7 +22,7 @@ class TestButton extends React.Component {
       //alert("Great Write!");
       
         var i=this.state['i'];
-          var txt = ' Search the photos of you favorite things';
+          var txt = 'Click to search, mouse over for running string, mouse out to stop running string';
           var speed = 50;
                function write(){
                 if (i < txt.length) {
@@ -72,7 +72,7 @@ export default connect(TestButton);
 const Container = styled.div`
 margin: 1%;
   & > input {
-      width: 18rem;
+      width: 36rem;
   }
   
  

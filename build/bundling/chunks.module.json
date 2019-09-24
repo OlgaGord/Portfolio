@@ -2,14 +2,24 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.2",
-  "hash": "0efb93c3da3180599b36",
+  "hash": "830648ae32cab04c8bcf",
   "publicPath": "/static/",
   "outputPath": "D:\\heritage\\internship\\projects\\PortfolioOlgaGor\\build\\static",
   "assetsByChunkName": {
     "list": "list.module.js",
-    "portfolio": "portfolio.module.js"
+    "portfolio": [
+      "portfolio.module.js",
+      "portfolio.0efb93c3da3180599b36.hot-update.js"
+    ]
   },
   "assets": [
+    {
+      "name": "0efb93c3da3180599b36.hot-update.json",
+      "size": 51,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": false
+    },
     {
       "name": "list.module.js",
       "size": 18407,
@@ -19,11 +29,22 @@
       "chunkNames": [
         "list"
       ],
+      "emitted": true
+    },
+    {
+      "name": "portfolio.0efb93c3da3180599b36.hot-update.js",
+      "size": 31492,
+      "chunks": [
+        "portfolio"
+      ],
+      "chunkNames": [
+        "portfolio"
+      ],
       "emitted": false
     },
     {
       "name": "portfolio.module.js",
-      "size": 4744167,
+      "size": 4744808,
       "chunks": [
         "portfolio"
       ],
@@ -40,7 +61,8 @@
         "portfolio"
       ],
       "assets": [
-        "portfolio.module.js"
+        "portfolio.module.js",
+        "portfolio.0efb93c3da3180599b36.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -52,7 +74,8 @@
         "portfolio"
       ],
       "assets": [
-        "portfolio.module.js"
+        "portfolio.module.js",
+        "portfolio.0efb93c3da3180599b36.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

@@ -18,12 +18,8 @@ const settings = {
               "/"
             ],
             [
-              "Web design",
-              "/category/web_design/"
-            ],
-            [
-              "Programming",
-              "/category/programming/"
+              "Projects",
+              "/projects/"
             ],
             [
               "First Projects",
@@ -53,7 +49,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "homepage" : "front-page",
+          "homepage" : "portfolio",
           "api": "https://webuty.ca/wp-json"
         }
       }

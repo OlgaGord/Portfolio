@@ -7,7 +7,7 @@ import Page404 from "./page404.js";
 import Loading from "./loading";
 import FrontImage from "./frontImage";
 import customStyles from '../../css/style.css';
-import TestButton from './testButton';
+
 
 //import bootstrapStyles from 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -51,14 +51,15 @@ const Theme = ({ state }) => {
       {/* <Global styles={css(globalStyles, customStyles, bootstrapStyles)} /> */}
       <Global styles={css(globalStyles, customStyles)} />
       <HeadContainer>
+      
         <Header />
          {data.isHome && (
           <FrontImage /> 
        )}  
-      <TestButton/>
+      
       </HeadContainer>
       <Body>
-        <div class="col-sm-4">
+        <div>
           {data.isFetching && <Loading />}
           {data.isArchive && <List />}
           {data.isPostType && <Post />}
