@@ -4,7 +4,7 @@
   "version": "4.39.2",
   "hash": "0efb93c3da3180599b36",
   "publicPath": "/static/",
-  "outputPath": "D:\\projects\\project1\\portfolio\\build\\static",
+  "outputPath": "D:\\heritage\\internship\\projects\\PortfolioOlgaGor\\build\\static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "portfolio": "portfolio.module.js"
@@ -12,7 +12,7 @@
   "assets": [
     {
       "name": "list.module.js",
-      "size": 17979,
+      "size": 18407,
       "chunks": [
         "list"
       ],
@@ -23,7 +23,7 @@
     },
     {
       "name": "portfolio.module.js",
-      "size": 4742749,
+      "size": 4744167,
       "chunks": [
         "portfolio"
       ],
