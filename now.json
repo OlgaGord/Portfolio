@@ -1,10 +1,10 @@
 {
-    "alias": "portfolio.webuty.ca",
-    "version": 2,
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@frontity/now"
-      }
-    ]
-  }
+  "alias": "portfolio.webuty.ca",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@frontity/now"
+    }
+  ]
+}

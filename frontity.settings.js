@@ -15,7 +15,7 @@ const settings = {
           "menu": [
             [
               "Home",
-              "/"
+              "https://webuty.ca"
             ],
             [
               "Projects",
@@ -49,7 +49,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "homepage" : "portfolio",
+          "homepage": "portfolio",
           "api": "https://webuty.ca/wp-json"
         }
       }

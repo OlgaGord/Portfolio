@@ -21,41 +21,42 @@ const Post = ({ state, actions, libraries }) => {
     actions.source.fetch("/");
     List.preload();
   }, []);
-  
+
   return data.isReady ? (
     <>
-    <Container>
-      <div><Button color="danger">Danger!</Button>
-        <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-        {data.isPost && (
-          <div>
-            
-            <StyledLink link={author.link}>
-              
-              <Author>
-                By <b>{author.name}</b>
-              </Author>
-            </StyledLink>
-            <Fecha>
-              {" "}
-              on <b>{date.toDateString()}</b>
-            </Fecha>
-          </div>
-        )}
-      </div>
-      {state.theme.featured.showOnPost && (
-        <FeaturedMedia id={post.featured_media} />
-      )}
-      <Body>
+      <Container>
+        <div>
+          {/* <Button color="danger">Danger!</Button> */}
+          <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+          {data.isPost && (
+            <div>
 
-        {/* {post.acf && post.acf.img1 && (<img src={post.acf.img1.url}></img>)}
+              <StyledLink link={author.link}>
+
+                <Author>
+                  By <b>{author.name}</b>
+                </Author>
+              </StyledLink>
+              <Fecha>
+                {" "}
+                on <b>{date.toDateString()}</b>
+              </Fecha>
+            </div>
+          )}
+        </div>
+        {state.theme.featured.showOnPost && (
+          <FeaturedMedia id={post.featured_media} />
+        )}
+        <Body>
+
+          {/* {post.acf && post.acf.img1 && (<img src={post.acf.img1.url}></img>)}
         {post.acf && post.acf.img2 && (<img src={post.acf.img2.url}></img>)}
         {post.acf && post.acf.img3 && (<img src={post.acf.img3.url}></img>)} */}
-    
- 
-        <libraries.html2react.Component html={post.content.rendered} />
-      </Body>
-    </Container>
+
+
+          <libraries.html2react.Component html={post.content.rendered} />
+        </Body>
+      </Container>
     </>
   ) : null;
 };
@@ -73,7 +74,7 @@ const Title = styled.h1`
   margin: 0;
   margin-top: 24px;
   margin-bottom: 8px;
-  color: rgba(12, 17, 43);
+  color: #fff;
 `;
 
 const StyledLink = styled(Link)`
@@ -81,7 +82,7 @@ const StyledLink = styled(Link)`
 `;
 
 const Author = styled.p`
-  color: rgba(12, 17, 43, 0.9);
+  color:#fff ;
   font-size: 0.9em;
   display: inline;
 `;
@@ -93,7 +94,7 @@ const Fecha = styled.p`
 `;
 
 const Body = styled.div`
-  color: rgba(12, 17, 43, 0.8);
+  color: #fff;
   word-break: break-word;
   * {
     max-width: 100%;
@@ -113,6 +114,10 @@ const Body = styled.div`
     figcaption {
       font-size: 0.7em;
     }
+    a {
+      color:#fff;
+      text-decoration:none;
+    }
   }
   iframe {
     display: block;
@@ -125,8 +130,8 @@ const Body = styled.div`
     padding: 4px 16px;
   }
   a {
-    color: rgb(31, 56, 197);
-    text-decoration: underline;
+    color: #fff;
+    text-decoration: none;
   }
   /* WordPress Core Align Classes */
   @media (min-width: 420px) {
